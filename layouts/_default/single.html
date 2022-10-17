@@ -1,0 +1,12 @@
+{{- define "main" }}
+<div>
+  <a href="{{ .Site.BaseURL }}"> Back to Home </a>
+</div>
+<div>
+  <h1>{{ .Title }}</h1>
+  <div>{{ .Date }}</div>
+  <br /><br />
+  <div>{{ .Content }}</div>
+</div>
+
+{{ end -}}

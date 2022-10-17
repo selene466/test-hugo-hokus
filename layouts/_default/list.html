@@ -1,0 +1,10 @@
+{{- define "main" }} {{- range where (.Paginator 5).Pages "Type" "article" -}}
+<div>
+  <a href="{{ .Permalink }}"> {{ .Title }} </a><br />
+  {{ .Date }}
+</div>
+<hr />
+
+{{- end -}}
+<div>{{ template "_internal/pagination.html" . }}</div>
+{{ end -}}

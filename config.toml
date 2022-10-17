@@ -1,0 +1,6 @@
+baseurl = "//example.com/blog/"
+RelativeURLs=true
+CanonifyURLs=true
+
+languageCode = 'en-us'
+title = 'My New Hugo Site'
